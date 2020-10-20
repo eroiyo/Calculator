@@ -65,9 +65,10 @@ function toNegative(){
 	if(document.form.textview.value!=""){
 	document.form.textview.value=(parseFloat(document.form.textview.value)*-1);
 	}else
-	{
+	{ if(document.form.textview.placeholder!=""){
 		document.form.textview.placeholder=(parseFloat(document.form.textview.placeholder)*-1);
 		frist=frist*-1;
+	}
 	}
 
 }
@@ -75,9 +76,10 @@ function toPower(){
 	if(document.form.textview.value!=""){
 	document.form.textview.value=(parseFloat(document.form.textview.value)*document.form.textview.value);
 	}else
-	{
+	{ if(document.form.textview.placeholder!=""){
 		document.form.textview.placeholder=(parseFloat(document.form.textview.placeholder)*document.form.textview.placeholder);
 		frist=frist*frist;
+	}
 	}
 
 }
